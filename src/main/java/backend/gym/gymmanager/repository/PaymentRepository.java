@@ -1,4 +1,4 @@
-package backend.gym.gymmanager.dao;
+package backend.gym.gymmanager.repository;
 
 import backend.gym.gymmanager.model.Payment;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,6 +1,6 @@
 package backend.gym.gymmanager.services;
 
-import backend.gym.gymmanager.dao.SubscriberRepository;
+import backend.gym.gymmanager.repository.SubscriberRepository;
 import backend.gym.gymmanager.exception.ResourceNotFoundException;
 import backend.gym.gymmanager.model.Subscriber;
 import org.springframework.beans.factory.annotation.Autowired;

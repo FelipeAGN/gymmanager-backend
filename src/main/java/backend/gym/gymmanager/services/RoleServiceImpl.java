@@ -1,10 +1,8 @@
 package backend.gym.gymmanager.services;
 
-import backend.gym.gymmanager.dao.RoleRepository;
-import backend.gym.gymmanager.dao.UserRepository;
+import backend.gym.gymmanager.repository.RoleRepository;
 import backend.gym.gymmanager.exception.ResourceNotFoundException;
 import backend.gym.gymmanager.model.Role;
-import backend.gym.gymmanager.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
