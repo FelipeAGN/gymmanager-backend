@@ -19,10 +19,13 @@ public class RoleServiceImpl implements RoleService{
     private RoleRepository roleRepository;
 
     @Override
-    public List<Role> findAll() { return (List<Role>) roleRepository.findAll(); }
+    public List<Role> findAll() { return roleRepository.findAll(); }
 
     @Override
     public Role findById(Long id) { return roleRepository.findById(id).orElseThrow(()-> new ResourceNotFoundException("Rol no encontrado.")); }
+
+    @Override
+    public Role findByName(String name) { return roleRepository.findByName(name); }
 
     @Override
     public Role save(@NotNull(message = "El rol no puede ser null.")@Valid Role role) { return roleRepository.save(role); }
